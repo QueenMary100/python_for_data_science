@@ -7,13 +7,12 @@ women_means = [25, 32, 34, 20, 25]
 
 x = np.arange(len(labels))  # the label locations
 width = 0.35  # the width of the bars
-
 fig,ax = plt.subplots()
 rects1 = ax.bar(x - width/ 2, men_means, width, label = "Men")
 rects2 = ax.bar(x + width/2, women_means, width, label = "Women")
 
 ax.set_ylabel("Scores")
-ax.set_title ("Scores by group and Gender")
+ax.set_title ("Scores by group and Gender
 ax.set_xticks(x,labels)
 ax.legend()
 
